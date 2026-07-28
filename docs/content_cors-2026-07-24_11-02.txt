@@ -1,0 +1,32 @@
+### cors
+<img src="https://flagcdn.com/w320/id.png" alt="indonesia flag"/>
+<p>Indonesia</p>
+
+<button type="button" id="button-post-restcountries" class="btn button-cmp__text button-cmp__text--primary">
+  POST restcountries
+</button>
+
+<script type="text/javascript">
+  (function () {
+    'use strict';
+
+    async function onButtonClick() {
+      const path = "https://restcountries.com/v3.1/all?fields=name,region,capital,flag";
+      const data = {};
+
+      const responseJSON = await fetch(path, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+
+      const response = await responseJSON.json();
+      console.log('button-post-restcountries', response);
+    }
+
+    document.querySelector('#button-post-restcountries')
+      .addEventListener('click', onButtonClick);
+  })();
+</script>
+

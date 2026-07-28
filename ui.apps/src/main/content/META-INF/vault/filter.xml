@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/aemcors/clientlibs"/>
+    <filter root="/apps/aemcors/components"/>
+    <filter root="/apps/aemcors/i18n"/>
+    <filter root="/apps/sling" />
+    <filter root="/apps/msm/aemcors_blueprint" mode="merge"/>
+</workspaceFilter>

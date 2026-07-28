@@ -1,0 +1,132 @@
+{
+  "aemcors": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:title": "AEM CORS",
+      "cq:template": "/conf/aemcors/settings/wcm/templates/page-content",
+      "sling:configRef": "/conf/aemcors",
+      "cq:redirectTarget": "/content/aemcors/en/en",
+      "sling:redirect": true,
+      "sling:redirectStatus": 302,
+      "cq:conf": "/conf/aemcors",
+      "sling:resourceType": "aemcors/components/page",
+      "cq:allowedTemplates": [
+        "/conf/aemcors/settings/wcm/templates/(?!xf-).*"
+      ],
+      "image": {
+        "jcr:primaryType": "nt:unstructured"
+      }
+    },
+    "en": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:title": "en",
+        "cq:template": "/conf/aemcors/settings/wcm/templates/page-content",
+        "cq:redirectTarget": "/content/aemcors/en/en",
+        "sling:resourceType": "aemcors/components/page"
+      },
+      "en": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:createdBy": "admin",
+        "jcr:content": {
+          "jcr:primaryType": "cq:PageContent",
+          "jcr:title": "en",
+          "cq:template": "/conf/aemcors/settings/wcm/templates/page-content",
+          "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+          "pageTitle": "AEM Vanilla",
+          "sling:resourceType": "aemcors/components/page",
+          "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+          "root": {
+            "jcr:primaryType": "nt:unstructured",
+            "layout": "responsiveGrid",
+            "sling:resourceType": "aemcors/components/container",
+            "container": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "aemcors/components/container",
+              "title": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "aemcors/components/title"
+              },
+              "container": {
+                "jcr:primaryType": "nt:unstructured",
+                "layout": "responsiveGrid",
+                "sling:resourceType": "aemcors/components/container",
+                "teaser": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "jcr:title": "Epic Journey",
+                  "actionsEnabled": "false",
+                  "titleFromPage": "false",
+                  "jcr:description": "<p>Don't stop half way, go for the top!</p>\r\n",
+                  "descriptionFromPage": "false",
+                  "sling:resourceType": "aemcors/components/teaser",
+                  "textIsRich": "true",
+                  "cq:responsive": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "default": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "offset": "0",
+                      "width": "4"
+                    }
+                  }
+                },
+                "teaser_copy": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "jcr:title": "Epic Journey",
+                  "actionsEnabled": "false",
+                  "titleFromPage": "false",
+                  "jcr:description": "<p>Don't stop half way, go for the top!</p>\r\n",
+                  "descriptionFromPage": "false",
+                  "sling:resourceType": "aemcors/components/teaser",
+                  "textIsRich": "true",
+                  "cq:responsive": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "default": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "offset": "0",
+                      "width": "4"
+                    }
+                  }
+                },
+                "teaser_copy_1579324932": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "jcr:title": "Epic Journey",
+                  "actionsEnabled": "false",
+                  "titleFromPage": "false",
+                  "jcr:description": "<p>Don't stop half way, go for the top!</p>\r\n",
+                  "descriptionFromPage": "false",
+                  "sling:resourceType": "aemcors/components/teaser",
+                  "textIsRich": "true",
+                  "cq:responsive": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "default": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "offset": "0",
+                      "width": "4"
+                    }
+                  }
+                },
+                "helloworld": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "text": "lalala :)",
+                  "sling:resourceType": "aemcors/components/helloworld"
+                },
+                "link": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "linkURL": "/content/aemcors/en/home",
+                  "linkText": "reload",
+                  "sling:resourceType": "aemcors/components/link"
+                },
+                "link_empty": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "aemcors/components/link"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/aemcors",
+        "create path (nt:unstructured) /content/dam/aemcors/jcr:content",
+        "set properties on /content/dam/aemcors/jcr:content\n  set cq:conf{String} to /conf/aemcors\n  set jcr:title{String} to \"AEM Cloud Cors\"\nend"
+    ]
+}
