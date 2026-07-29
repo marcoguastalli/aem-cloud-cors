@@ -2,16 +2,8 @@
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:isDelivered="{Boolean}false"
-        cq:lastReplicated="{Date}2026-07-24T10:58:10.742+02:00"
-        cq:lastReplicated_publish="{Date}2026-07-24T10:58:10.742+02:00"
-        cq:lastReplicatedBy="admin"
-        cq:lastReplicatedBy_publish="admin"
-        cq:lastReplicationAction="Activate"
-        cq:lastReplicationAction_publish="Activate"
         cq:redirectTarget="/content/aemcors/es/es"
         cq:template="/conf/aemcors/settings/wcm/templates/page-content"
-        jcr:isCheckedOut="{Boolean}true"
         jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="es"

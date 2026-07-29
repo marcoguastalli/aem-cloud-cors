@@ -4,17 +4,7 @@
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:isDelivered="{Boolean}false"
-        cq:lastModified="{Date}2026-07-29T10:48:16.285+02:00"
-        cq:lastModifiedBy="admin"
-        cq:lastReplicated="{Date}2026-07-24T10:58:10.742+02:00"
-        cq:lastReplicated_publish="{Date}2026-07-24T10:58:10.742+02:00"
-        cq:lastReplicatedBy="admin"
-        cq:lastReplicatedBy_publish="admin"
-        cq:lastReplicationAction="Activate"
-        cq:lastReplicationAction_publish="Activate"
         cq:template="/conf/aemcors/settings/wcm/templates/page-content"
-        jcr:isCheckedOut="{Boolean}true"
         jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="en"
@@ -36,10 +26,6 @@
                     sling:resourceType="aemcors/components/container"
                     layout="responsiveGrid">
                     <breadcrumb
-                        jcr:created="{Date}2026-07-29T10:47:51.079+02:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2026-07-29T10:48:16.279+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="aemcors/components/breadcrumb"
                         disableShadowing="false"
@@ -95,26 +81,16 @@
                         </cq:responsive>
                     </teaser_copy_1579324932>
                     <helloworld
-                        jcr:lastModified="{Date}2025-08-14T12:12:39.967+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="aemcors/components/helloworld"
                         text="aem cors"/>
                     <link
-                        jcr:created="{Date}2025-08-14T10:59:20.443+02:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2025-08-14T11:35:50.664+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="aemcors/components/link"
                         linkTarget="_self"
                         linkText="Reload Page"
                         linkURL="/content/aemcors/language-masters/en"/>
                     <link_2052271230
-                        jcr:created="{Date}2025-08-14T11:35:13.701+02:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2025-08-14T11:35:43.727+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="aemcors/components/link"
                         linkTarget="_blank"

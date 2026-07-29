@@ -2,17 +2,7 @@
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:isDelivered="{Boolean}false"
-        cq:lastModified="{Date}2025-12-30T15:11:38.035+01:00"
-        cq:lastModifiedBy="admin"
-        cq:lastReplicated="{Date}2026-07-24T10:58:10.742+02:00"
-        cq:lastReplicated_publish="{Date}2026-07-24T10:58:10.742+02:00"
-        cq:lastReplicatedBy="admin"
-        cq:lastReplicatedBy_publish="admin"
-        cq:lastReplicationAction="Activate"
-        cq:lastReplicationAction_publish="Activate"
         cq:template="/conf/aemcors/settings/wcm/templates/simple-content"
-        jcr:isCheckedOut="{Boolean}true"
         jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Simple Content Page (without header nor footer)"
@@ -34,10 +24,6 @@
                     sling:resourceType="aemcors/components/container"
                     layout="responsiveGrid">
                     <text
-                        jcr:created="{Date}2025-12-30T15:11:22.568+01:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2025-12-30T15:11:38.032+01:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="aemcors/components/text"
                         text="&lt;p>Language Master text&lt;/p>&#xd;&#xa;"
