@@ -3,4 +3,4 @@
     cq:icon="fileHTML"
     jcr:primaryType="cq:Component"
     jcr:title="aemcors.components.htmlcomponent.title"
-    componentGroup="AEM Cors - Content"/>
+    componentGroup="AEM Cloud Cors - Content"/>

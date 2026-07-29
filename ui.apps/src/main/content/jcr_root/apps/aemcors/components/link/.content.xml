@@ -3,4 +3,4 @@
     cq:icon="link"
     jcr:primaryType="cq:Component"
     jcr:title="aemcors.components.link.title"
-    componentGroup="AEM Cors - Content"/>
+    componentGroup="AEM Cloud Cors - Content"/>

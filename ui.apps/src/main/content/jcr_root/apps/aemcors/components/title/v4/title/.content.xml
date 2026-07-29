@@ -5,4 +5,4 @@
     jcr:primaryType="cq:Component"
     jcr:title="Title (v4)"
     sling:resourceSuperType="core/wcm/components/title/v4/title"
-    componentGroup="AEM Cors - Content"/>
+    componentGroup="AEM Cloud Cors - Content"/>
