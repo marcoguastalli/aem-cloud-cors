@@ -3,18 +3,18 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:isDelivered="{Boolean}false"
-        cq:lastReplicated="{Date}2025-08-14T10:59:52.870+02:00"
-        cq:lastReplicated_publish="{Date}2025-08-14T10:59:52.870+02:00"
+        cq:lastReplicated="{Date}2026-07-24T10:58:10.742+02:00"
+        cq:lastReplicated_publish="{Date}2026-07-24T10:58:10.742+02:00"
         cq:lastReplicatedBy="admin"
         cq:lastReplicatedBy_publish="admin"
         cq:lastReplicationAction="Activate"
         cq:lastReplicationAction_publish="Activate"
-        cq:tags="[]"
-        cq:template="/libs/cq/experience-fragments/components/experiencefragment/template"
+        cq:redirectTarget="/content/aemcors/es/es"
+        cq:template="/conf/aemcors/settings/wcm/templates/page-content"
         jcr:isCheckedOut="{Boolean}true"
         jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Footer"
-        jcr:uuid="b4264f4e-07f2-4019-9e8d-14b75cb86d84"
-        sling:resourceType="cq/experience-fragments/components/experiencefragment"/>
+        jcr:title="es"
+        jcr:uuid="096b1788-9de1-4c2d-b516-c3b53adfa095"
+        sling:resourceType="aemcors/components/page"/>
 </jcr:root>

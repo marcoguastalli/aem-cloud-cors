@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:isDelivered="{Boolean}false"
+        cq:lastModified="{Date}2025-12-30T15:22:50.070+01:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2026-07-24T10:58:10.871+02:00"
+        cq:lastReplicated_publish="{Date}2026-07-24T10:58:10.871+02:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicatedBy_publish="admin"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:lastRolledout="{Date}2025-12-30T15:12:29.876+01:00"
+        cq:lastRolledoutBy="admin"
+        cq:template="/conf/aemcors/settings/wcm/templates/simple-content"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:LiveRelationship,cq:ReplicationStatus2,mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Simple Content Page (without header nor footer)"
+        jcr:uuid="ee48d6a2-1d7b-4691-bef7-ab4ebea91ce4"
+        sling:resourceType="aemcors/components/page">
+        <root
+            cq:lastRolledout="{Date}2025-12-30T15:12:29.866+01:00"
+            cq:lastRolledoutBy="admin"
+            jcr:mixinTypes="[cq:LiveRelationship]"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aemcors/components/container"
+            layout="responsiveGrid">
+            <container
+                cq:lastRolledout="{Date}2025-12-30T15:12:29.869+01:00"
+                cq:lastRolledoutBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemcors/components/container"
+                layout="responsiveGrid">
+                <title
+                    cq:lastRolledout="{Date}2025-12-30T15:12:29.872+01:00"
+                    cq:lastRolledoutBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemcors/components/title/v4/title"/>
+                <container
+                    cq:lastRolledout="{Date}2025-12-30T15:12:29.873+01:00"
+                    cq:lastRolledoutBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemcors/components/container"
+                    layout="responsiveGrid">
+                    <text
+                        cq:isCancelledForChildren="{Boolean}true"
+                        cq:lastRolledout="{Date}2025-12-30T15:12:29.876+01:00"
+                        cq:lastRolledoutBy="admin"
+                        jcr:created="{Date}2025-12-30T15:11:22.568+01:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2025-12-30T15:22:50.066+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:mixinTypes="[cq:LiveRelationship,cq:LiveSyncCancelled]"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemcors/components/text"
+                        text="&lt;p>es es&lt;/p>&#xd;&#xa;"
+                        textIsRich="true"/>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

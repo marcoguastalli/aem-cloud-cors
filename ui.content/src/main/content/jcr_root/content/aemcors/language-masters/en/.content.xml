@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:isDelivered="{Boolean}false"
+        cq:lastModified="{Date}2026-07-29T10:48:16.285+02:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2026-07-24T10:58:10.742+02:00"
+        cq:lastReplicated_publish="{Date}2026-07-24T10:58:10.742+02:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicatedBy_publish="admin"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
         cq:template="/conf/aemcors/settings/wcm/templates/page-content"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="en"
+        jcr:uuid="f3b43e69-706b-462c-ae72-9bba98df9e93"
         sling:resourceType="aemcors/components/page"
-        pageTitle="AEM Cloud Cors">
+        pageTitle="AEM CORS">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="aemcors/components/container"
@@ -18,11 +30,22 @@
                 sling:resourceType="aemcors/components/container">
                 <title
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="aemcors/components/title"/>
+                    sling:resourceType="aemcors/components/title/v4/title"/>
                 <container
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemcors/components/container"
                     layout="responsiveGrid">
+                    <breadcrumb
+                        jcr:created="{Date}2026-07-29T10:47:51.079+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-07-29T10:48:16.279+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemcors/components/breadcrumb"
+                        disableShadowing="false"
+                        hideCurrent="false"
+                        showHidden="false"
+                        startLevel="1"/>
                     <teaser
                         jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
                         jcr:primaryType="nt:unstructured"
@@ -72,24 +95,31 @@
                         </cq:responsive>
                     </teaser_copy_1579324932>
                     <helloworld
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="aemcors/components/helloworld"
-                        text="lalala :)"/>
-                    <image
-                        jcr:created="{Date}2026-07-29T10:23:16.613+02:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2026-07-29T10:23:32.302+02:00"
+                        jcr:lastModified="{Date}2025-08-14T12:12:39.967+02:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="aemcors/components/image"
-                        alt="default asset"
-                        altValueFromDAM="false"
-                        displayPopupTitle="true"
-                        fileReference="/content/dam/aemcors/images/asset.jpg"
-                        imageFromPageImage="false"
-                        isDecorative="false"
+                        sling:resourceType="aemcors/components/helloworld"
+                        text="aem cors"/>
+                    <link
+                        jcr:created="{Date}2025-08-14T10:59:20.443+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2025-08-14T11:35:50.664+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemcors/components/link"
                         linkTarget="_self"
-                        titleValueFromDAM="true"/>
+                        linkText="Reload Page"
+                        linkURL="/content/aemcors/language-masters/en"/>
+                    <link_2052271230
+                        jcr:created="{Date}2025-08-14T11:35:13.701+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2025-08-14T11:35:43.727+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemcors/components/link"
+                        linkTarget="_blank"
+                        linkText="Reload Page in a New Tab"
+                        linkURL="/content/aemcors/language-masters/en"/>
                 </container>
             </container>
         </root>

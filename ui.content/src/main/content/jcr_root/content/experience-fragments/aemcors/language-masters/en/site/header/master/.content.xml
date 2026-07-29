@@ -1,40 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2026-07-29T10:20:05.317+02:00"
+        cq:isDelivered="{Boolean}false"
+        cq:lastModified="{Date}2026-07-29T10:47:14.822+02:00"
         cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2025-08-14T11:49:20.879+02:00"
+        cq:lastReplicated_publish="{Date}2025-08-14T11:49:20.879+02:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicatedBy_publish="admin"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
         cq:tags="[]"
         cq:template="/conf/aemcors/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
         cq:xfVariantType="web"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Header"
+        jcr:uuid="760a2d14-fc22-4d24-bacb-89cba1c43564"
         sling:resourceType="aemcors/components/xfpage">
-        <root
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="aemcors/components/container"
-            layout="simple">
-            <navigation
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="aemcors/components/navigation"
-                collectAllPages="false"
-                skipNavigationRoot="false"
-                structureDepth="1"
-                structureStart="2"/>
-            <languagenavigation
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="aemcors/components/languagenavigation"
-                navigationRoot="/content/aemcors"
-                structureDepth="2"/>
-            <search
-                jcr:lastModified="{Date}2026-07-29T10:20:05.305+02:00"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="aemcors/components/search"
-                id="default-search"
-                searchRoot="/content/aemcors/en"/>
-            <logo/>
-        </root>
     </jcr:content>
 </jcr:root>

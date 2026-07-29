@@ -7,5 +7,4 @@
         jcr:primaryType="cq:PageContent"
         jcr:title="Footer"
         sling:resourceType="cq/experience-fragments/components/experiencefragment"/>
-    <master/>
 </jcr:root>
