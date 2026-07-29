@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        pageTitle="AEM Cloud Cors"
-        jcr:primaryType="cq:PageContent"
-        jcr:title="en"
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
         cq:template="/conf/aemcors/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="en"
         sling:resourceType="aemcors/components/page"
-    >
+        pageTitle="AEM Cloud Cors">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="aemcors/components/container"
@@ -76,6 +75,21 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="aemcors/components/helloworld"
                         text="lalala :)"/>
+                    <image
+                        jcr:created="{Date}2026-07-29T10:23:16.613+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-07-29T10:23:32.302+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemcors/components/image"
+                        alt="default asset"
+                        altValueFromDAM="false"
+                        displayPopupTitle="true"
+                        fileReference="/content/dam/aemcors/images/asset.jpg"
+                        imageFromPageImage="false"
+                        isDecorative="false"
+                        linkTarget="_self"
+                        titleValueFromDAM="true"/>
                 </container>
             </container>
         </root>

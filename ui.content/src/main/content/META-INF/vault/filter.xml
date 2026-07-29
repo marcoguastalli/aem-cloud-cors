@@ -3,9 +3,9 @@
     <filter root="/conf/aemcors" mode="merge"/>
     <filter root="/content/aemcors" mode="replace"/>
     <filter root="/content/dam/aemcors" mode="replace">
-        <exclude pattern="/content/dam/aemcors(/.*)?"/>
+        <!--exclude pattern="/content/dam/aemcors(/.*)?"/-->
         <include pattern="/content/dam/aemcors/jcr:content(/.*)?"/>
+        <include pattern="/content/dam/aemcors/images(/.*)?"/>
     </filter>
-    <filter root="/content/dam/aemcors/asset.jpg" mode="replace"/>
     <filter root="/content/experience-fragments/aemcors" mode="replace"/>
 </workspaceFilter>
