@@ -54,7 +54,7 @@
     <!-- JUnit https://mvnrepository.com/artifact/org.junit/junit-bom -->
     <org.junit.version>5.8.2</org.junit.version>
     <org.mockito.version>4.11.0</org.mockito.version>
-    <io.wcm.testing.version>5.2.0</io.wcm.testing.version>
+    <io.wcm.testing.version>5.5.4</io.wcm.testing.version>
     <org.apache.sling.testing.caconfig.mock.plugin.version>1.4.0</org.apache.sling.testing.caconfig.mock.plugin.version>
     <uk.org.lidalia.slf4j-test.version>1.2.0</uk.org.lidalia.slf4j-test.version>
     <!-- https://mvnrepository.com/artifact/com.adobe.aem/spa.project.core -->
@@ -147,8 +147,8 @@
           <artifactId>frontend-maven-plugin</artifactId>
           <version>${frontend-maven-plugin.version}</version>
           <configuration>
-            <nodeVersion>v16.17.0</nodeVersion>
-            <npmVersion>8.15.0</npmVersion>
+            <nodeVersion>${node.version}</nodeVersion>
+            <npmVersion>${npm.version}</npmVersion>
           </configuration>
           <executions>
             <execution>
@@ -614,20 +614,20 @@ Bundle-DocURL:
       <dependency>
         <groupId>org.junit</groupId>
         <artifactId>junit-bom</artifactId>
-        <version>5.8.2</version>
+        <version>${org.junit.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
-        <version>4.1.0</version>
+        <version>${org.mockito.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-junit-jupiter</artifactId>
-        <version>4.1.0</version>
+        <version>${org.mockito.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
@@ -639,7 +639,7 @@ Bundle-DocURL:
       <dependency>
         <groupId>io.wcm</groupId>
         <artifactId>io.wcm.testing.aem-mock.junit5</artifactId>
-        <version>5.5.4</version>
+        <version>${io.wcm.testing.version}</version>
         <scope>test</scope>
         <exclusions>
           <exclusion>
@@ -651,7 +651,7 @@ Bundle-DocURL:
       <dependency>
         <groupId>org.apache.sling</groupId>
         <artifactId>org.apache.sling.testing.caconfig-mock-plugin</artifactId>
-        <version>1.4.0</version>
+        <version>${org.apache.sling.testing.caconfig.mock.plugin.version}</version>
         <exclusions>
           <exclusion>
             <groupId>commons-collections</groupId>
@@ -680,7 +680,7 @@ Bundle-DocURL:
       <dependency>
         <groupId>uk.org.lidalia</groupId>
         <artifactId>slf4j-test</artifactId>
-        <version>1.0.1</version>
+        <version>${uk.org.lidalia.slf4j-test.version}</version>
         <scope>test</scope>
       </dependency>
       <!-- Testing END -->

@@ -1,5 +1,7 @@
 {
   "resource.resolver.mapping": [
-    "/content/aemcors/</", "/:/"
+    "/content/aemcors/</",
+    "/:/",
+    "/content/aemcors/>/"
   ]
 }
