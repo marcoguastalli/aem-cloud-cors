@@ -1,0 +1,12 @@
+{
+  "aemcors.common.label.general" : "Allgemein",
+  "aemcors.components.link.title" : "Link",
+  "aemcors.components.link.field.linkText.label" : "Linktext",
+  "aemcors.components.link.field.linkText.description" : "Der Text, der für den Link angezeigt wird.",
+  "aemcors.components.link.field.linkURL.label" : "Link-URL",
+  "aemcors.components.link.field.linkURL.description" : "Die Seite oder der Pfad, auf den der Link verweist.",
+  "aemcors.components.link.field.linkTarget.label" : "In neuem Tab öffnen",
+  "aemcors.components.link.field.linkTarget.description" : "Öffnet den Link in einem neuen Browser-Tab anstatt im aktuellen.",
+  "aemcors.components.htmlcomponent.title" : "HTML-Komponente",
+  "aemcors.components.htmlcomponent.tab.general.field.htmlcode" : "HTML-Code"
+}

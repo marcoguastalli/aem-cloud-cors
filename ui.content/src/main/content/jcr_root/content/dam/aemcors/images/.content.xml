@@ -4,6 +4,8 @@
     <jcr:content
         jcr:primaryType="nt:unstructured"
         jcr:title="images"
-        sourcing="false"/>
-    <asset.jpg/>
+        sourcing="false">
+        <folderThumbnail/>
+    </jcr:content>
+    <earth.png/>
 </jcr:root>
