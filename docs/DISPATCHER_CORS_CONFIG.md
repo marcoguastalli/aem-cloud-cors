@@ -46,9 +46,17 @@ This configuration ensures that **CORS response headers are cached alongside the
 | `Access-Control-Max-Age` | Caches preflight response validity (in seconds) |
 | `Access-Control-Allow-Credentials` | Indicates if credentials (cookies, auth) are allowed |
 
-## Integration with AEM CORS Filter
+## Integration with AEM CORS Policy
 
-The Sling filter in `core/src/main/java/com/aem/cors/core/filters/` sets these headers on responses. The Dispatcher configuration ensures they are preserved through the caching layer.
+There is no custom Sling filter — the headers are set by Adobe's built-in Granite CORS Policy
+(`com.adobe.granite.cors.impl.CORSPolicyImpl`, OSGi config only, author-tier only; see
+[`CORS.md`](./CORS.md) for the full config). The Dispatcher configuration here ensures those
+headers are preserved through the caching layer.
+
+> **Note:** this file previously only existed in `available_farms/`, without a corresponding
+> symlink in `enabled_farms/` — meaning this configuration had no actual effect (the dispatcher
+> was running the generic, unmodified `default.farm` instead). Fixed 2026-08-26; see
+> [`CORS.md`](./CORS.md) for details.
 
 ## Testing
 

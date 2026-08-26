@@ -91,14 +91,14 @@ be put in use when writing integration tests for AEM.
 
 ## CORS Configuration
 
-The project exposes custom JSON endpoints with CORS enabled for cross-origin requests. The CORS configuration is implemented via a Sling filter in the `core` module (`core/src/main/java/com/aem/cors/core/filters/`) that adds appropriate CORS headers and validates origins.
+CORS is enabled via Adobe's built-in Granite CORS Policy (OSGi config, no custom Java) and a
+Dispatcher farm that caches the CORS response headers alongside the response body. See
+[`docs/CORS.md`](docs/CORS.md) for the full breakdown.
 
 **Example CORS request:**
 
-    curl -i -X POST \
-      -H "Content-Type: application/json" \
-      -d '{"paths":["/content/aemcors"]}' \
-      http://localhost:4502/bin/aemcors/search/pagereferences.json
+    curl -i -H "Origin: http://localhost:3000" \
+      http://localhost:4502/content/aemcors.json
 
 ## Static Analysis
 
