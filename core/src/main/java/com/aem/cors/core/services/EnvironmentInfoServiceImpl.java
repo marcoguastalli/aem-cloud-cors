@@ -3,6 +3,7 @@ package com.aem.cors.core.services;
 import com.aem.cors.core.commonbeans.EnvironmentType;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.metatype.annotations.AttributeDefinition;
@@ -65,7 +66,7 @@ public class EnvironmentInfoServiceImpl implements EnvironmentInfoService {
         log.info("Environment variable ENVIRONMENT_SHORT_NAME is set with value: '{}'", getEnvironmentShortName());
         log.info("Environment variable ENVIRONMENT_AND_RUN_MODE is set with value: '{}'", getEnvironmentAndRunMode());
         log.info("Environment variable ORGANIZATION_ID is set with value: '{}'", getOrganizationId());
-        log.info("Environment variable ORGANIZATION_SECRET is set with value: '{}'", getOrganizationSecret());
+        log.info("Environment variable ORGANIZATION_SECRET is {}", StringUtils.isEmpty(getOrganizationSecret()) ? "not set" : "set");
     }
 
     @Override
