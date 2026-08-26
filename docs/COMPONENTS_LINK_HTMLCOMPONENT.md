@@ -47,7 +47,7 @@ Renders as: `<div>${model.htmlCode @ context='unsafe'}</div>` (in publish mode)
 ## Use Cases
 
 - **Link Component**: Simple navigation links, CTAs, internal/external references
-- **HTML Component**: Embedding CORS-testing scripts, custom markup snippets, third-party integrations (see `content_cors-2026-07-24_11-02.zip` for example CORS test button markup)
+- **HTML Component**: Embedding CORS-testing scripts, custom markup snippets, third-party integrations (see `content_cors-2026-07-24_11-02.txt` for example CORS test button markup)
 
 ---
 
