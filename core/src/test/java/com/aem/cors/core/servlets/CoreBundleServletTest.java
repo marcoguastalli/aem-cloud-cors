@@ -24,7 +24,7 @@ import static org.mockito.Mockito.when;
 
 @ExtendWith({AemContextExtension.class, MockitoExtension.class})
 class CoreBundleServletTest {
-    static final String SERVLET_OUTPUT = "{\"result\":\"The bundle 'aem-cors.core' is up and active in '' with ORGANIZATION_ID: '" + OSGI_CONFIG_PREFIX + "'\"}";
+    static final String SERVLET_OUTPUT = "{\"result\":\"The bundle 'aem-cloud-cors.core' is up and active in '' with ORGANIZATION_ID: '" + OSGI_CONFIG_PREFIX + "'\"}";
 
     AemContext aemContext = AppAemContext.newAemContext();
     @Mock

@@ -1,6 +1,6 @@
 # Content Cors Example Components
 
-This document references the components used in the exported content snapshot `content_cors-2026-07-24_11-02.zip`.
+This document references the components used in the CORS demo content under `/content/aemcors` (see `content_cors-2026-07-24_11-02.txt` for a raw HTML example).
 
 ## Components
 

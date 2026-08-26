@@ -55,6 +55,9 @@ public class LinkModel extends AbstractComponentImpl {
         if (null != link && link.isValid()) {
             return link.getURL();
         }
+        if (StringUtils.isBlank(linkURL)) {
+            return null;
+        }
         return linkURL.concat(DOT).concat(HTML_EXTENSION);
     }
 
