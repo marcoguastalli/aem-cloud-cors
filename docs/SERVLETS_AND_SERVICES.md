@@ -4,18 +4,18 @@ This document describes all servlets and OSGi services in aem-cloud-cors.
 
 ## Servlets
 
-### CoreBundleServlet (`/bin/aemcors/bundle-core`)
+### CoreBundleServlet (`/bin/aemcors/core-bundle-health-check`)
 
 **Location:** `core/src/main/java/com/aem/cors/core/servlets/CoreBundleServlet.java`
 
 **Purpose:** Health check servlet that reports the core bundle status and organization ID.
 
-**Endpoint:** `/bin/aemcors/bundle-core.json` (GET or POST)
+**Endpoint:** `/bin/aemcors/core-bundle-health-check.json` (GET or POST)
 
 **Response:**
 ```json
 {
-  "result": "The bundle 'aem-cors.core' is up and active in 'DEV_AUTHOR' with ORGANIZATION_ID: 'my-org-id'"
+  "result": "The bundle 'aem-cloud-cors.core' is up and active in 'DEV_AUTHOR' with ORGANIZATION_ID: 'my-org-id'"
 }
 ```
 

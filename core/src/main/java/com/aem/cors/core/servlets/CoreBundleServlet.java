@@ -53,7 +53,7 @@ public class CoreBundleServlet extends AbstractSlingServlet {
         // get the trackingId from the request
         final String trackingId = getIdFromSession(slingHttpServletRequest);
         // prepare result
-        final String result = format("The bundle 'aem-cors.core' is up and active in '%s' with ORGANIZATION_ID: '%s'",
+        final String result = format("The bundle 'aem-cloud-cors.core' is up and active in '%s' with ORGANIZATION_ID: '%s'",
                 environmentInfoService.getEnvironmentAndRunMode(),
                 environmentInfoService.getOrganizationId());
         // prepare output
