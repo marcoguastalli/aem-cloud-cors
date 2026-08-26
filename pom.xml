@@ -519,7 +519,7 @@ Bundle-DocURL:
         <version>${aem.sdk.api}</version>
         <scope>provided</scope>
       </dependency>
-      <!-- Adobe Core Components INI -->
+      <!-- Adobe Core Components -->
       <dependency>
         <groupId>com.adobe.cq</groupId>
         <artifactId>core.wcm.components.core</artifactId>
@@ -543,8 +543,7 @@ Bundle-DocURL:
         <version>${core.wcm.components.version}</version>
         <type>zip</type>
       </dependency>
-      <!-- Adobe Core Components END -->
-      <!-- ACS AEM Commons INI -->
+      <!-- ACS AEM Commons -->
       <dependency>
         <groupId>com.adobe.acs</groupId>
         <artifactId>acs-aem-commons-all</artifactId>
@@ -562,8 +561,7 @@ Bundle-DocURL:
         <artifactId>acs-aem-commons-content</artifactId>
         <version>${acs.aem.commons.version}</version>
       </dependency>
-      <!-- ACS AEM Commons END -->
-      <!-- AcTool INI -->
+      <!-- AcTool -->
       <dependency>
         <groupId>biz.netcentric.cq.tools.accesscontroltool</groupId>
         <artifactId>accesscontroltool-package</artifactId>
@@ -578,8 +576,7 @@ Bundle-DocURL:
         <version>${accesscontroltool.version}</version>
         <type>zip</type>
       </dependency>
-      <!-- AcTool END -->
-      <!-- Context-Aware Configuration Editor INI -->
+      <!-- Context-Aware Configuration Editor -->
       <dependency>
         <groupId>io.wcm</groupId>
         <artifactId>io.wcm.caconfig.editor</artifactId>
@@ -590,8 +587,7 @@ Bundle-DocURL:
         <artifactId>io.wcm.caconfig.extensions</artifactId>
         <version>${io.wcm.caconfig.extensions.version}</version>
       </dependency>
-      <!-- Context-Aware Configuration Editor END -->
-      <!-- https://github.com/FasterXML/ INI -->
+      <!-- Jackson -->
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-core</artifactId>
@@ -607,8 +603,7 @@ Bundle-DocURL:
         <artifactId>jackson-databind</artifactId>
         <version>${com.fasterxml.jackson.core.version}</version>
       </dependency>
-      <!-- https://github.com/FasterXML/jackson END -->
-      <!-- Testing INI -->
+      <!-- Testing -->
       <dependency>
         <groupId>org.junit</groupId>
         <artifactId>junit-bom</artifactId>
@@ -681,7 +676,6 @@ Bundle-DocURL:
         <version>${uk.org.lidalia.slf4j-test.version}</version>
         <scope>test</scope>
       </dependency>
-      <!-- Testing END -->
       <!-- lombok -->
       <dependency>
         <groupId>org.projectlombok</groupId>
