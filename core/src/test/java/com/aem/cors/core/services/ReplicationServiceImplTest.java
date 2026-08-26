@@ -36,7 +36,7 @@ class ReplicationServiceImplTest {
     @Test
     void testPublishPath() {
         assertThat(replicationService, notNullValue());
-        replicationService.unPublishPath(PATH_CONTENT_EN_HOME);
+        replicationService.publishPath(PATH_CONTENT_EN_HOME);
     }
 
     @Test
