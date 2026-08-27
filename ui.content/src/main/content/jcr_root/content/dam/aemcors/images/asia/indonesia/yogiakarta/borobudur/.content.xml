@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:primaryType="sling:OrderedFolder">
+    <jcr:content
+        cq:isDelivered="{Boolean}false"
+        cq:lastReplicated="{Date}2025-08-14T12:01:51.742+02:00"
+        cq:lastReplicated_publish="{Date}2025-08-14T12:01:51.742+02:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicatedBy_publish="admin"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        jcr:lastModified="{Date}2025-08-14T12:01:57.768+02:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Borobudur"
+        sourcing="false"/>
+    <_x0034_84001091_18494249212048860_4475221106897618252_n.jpg/>
+    <_x0034_84814093_18494249203048860_9195517189646906804_n.jpg/>
+    <_x0034_84956972_18494249230048860_2012095800110007250_n.jpg/>
+    <_x0034_85005255_18494249221048860_6008140728977986881_n.jpg/>
+</jcr:root>
