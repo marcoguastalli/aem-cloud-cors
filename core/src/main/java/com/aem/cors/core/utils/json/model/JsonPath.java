@@ -3,6 +3,7 @@ package com.aem.cors.core.utils.json.model;
 import java.io.Serializable;
 import java.util.Objects;
 
+/** Representation of a JSON object holding a single 'path' property */
 public class JsonPath implements Serializable {
     private static final long serialVersionUID = 8538601591011347749L;
     private String path;

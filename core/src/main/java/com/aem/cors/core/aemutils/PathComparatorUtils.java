@@ -4,12 +4,14 @@ import static com.day.cq.commons.jcr.JcrConstants.JCR_CONTENT;
 
 import java.util.Comparator;
 
+/** Util class holding Comparator implementations for JCR paths */
 public class PathComparatorUtils {
 
     private PathComparatorUtils() {
         throw new UnsupportedOperationException("Do not instantiate Util class");
     }
 
+    /** Comparator that orders paths containing 'jcr:content' before paths that don't */
     static final class JcrContentFirst implements Comparator<String> {
         @Override
         public int compare(String s1, String s2) {

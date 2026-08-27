@@ -31,12 +31,55 @@ com.aem.cors.core/
 │       └── SearchResultPage.java             # Individual page reference
 ├── exceptions/
 │   └── AemRuntimeException.java              # Unchecked exception for runtime errors
-├── utils/
+├── utils/                                     # Pure-Java utilities (no AEM/Sling/JCR/OSGi imports)
 │   ├── HttpUtils.java                        # Request/tracking utilities
 │   ├── JsonUtils.java                        # JSON serialization via Jackson
-│   └── LoggerUtils.java                      # Tracking ID logging
+│   ├── LoggerUtils.java                      # Tracking ID logging
+│   ├── ... (32 more generic classes: dates, strings, hashing, URLs, XML, etc.)
+│   └── json/, page/domain/, pagination/, rest/, xml/   # generic value objects and interfaces
+├── aemutils/                                  # AEM/Sling/JCR/OSGi-dependent utilities
+│   ├── ResourceUtilsNeo.java, PageUtilsNeo.java, HttpUtilsNeo.java, ...
+│   └── page/, pagination/, rest/             # page ops, PaginationServiceImpl, RestUtilsImpl
 └── CoreConstants.java                        # Static constants for headers, strings, etc.
 ```
+
+See [Utility Packages](#utility-packages-utils--aemutils) below for the full breakdown of `utils`/`aemutils`.
+
+### Utility Packages (`utils` / `aemutils`)
+
+`core/src/main/java/com/aem/cors/core/{utils,aemutils}` hold 59 utility classes imported from a
+personal cross-project reference collection, split by whether they touch AEM/Sling/JCR/OSGi APIs.
+All PostFinance/Wasisa client-specific types, constants, and business logic were stripped out
+during import — only generic, reusable logic was kept. Every class has a corresponding JUnit 5
+test under `core/src/test/java/.../{utils,aemutils}`.
+
+**`com.aem.cors.core.utils`** — pure Java/generic-lib only, no AEM/Sling/JCR/OSGi imports:
+
+| Category | Classes |
+|---|---|
+| Strings/arrays/numbers | `StringsUtils`, `ArrayComparator`, `NumberUtils`, `HashUtils`, `HtmlUtils`, `LinkUtils`, `MenuUtils` |
+| Dates/locale | `CalendarUtils`, `DateFormatterUtils`, `LocalDateTimeUtils`, `LocaleUtils` |
+| HTTP/cookies/URLs | `HttpUtils`, `CookieUtils`, `UrlUtilsNeo`, `PathTenantUtils` |
+| JSON | `JsonUtils`, `json/GsonUtils`, `json/customserializer/GsonCustomStringSerializer`, `json/model/*` (8 response/error DTOs) |
+| REST domain | `rest/RestResponse`, `rest/domain/AbstractRestResponse`, `rest/domain/MapRestResponse`, `rest/exception/RestRequestException` |
+| Misc | `LoggerUtils`, `LoggerUtilsNeo`, `MathUtils`, `StreamUtils`, `xml/XmlUtils`, `pagination/PaginationService` (interface), `page/domain/PageInfo` |
+
+**`com.aem.cors.core.aemutils`** — depends on Sling/AEM/JCR/OSGi/Granite APIs:
+
+| Category | Classes |
+|---|---|
+| Resources | `ResourceUtils`, `ResourceUtilsNeo`, `ResourceMultiValueFieldUtils`, `ResourceSortUtils`, `NodeUtils` |
+| Pages | `PageUtilsNeo`, `page/PageManagingUtils`, `page/PageOperationsUtils` |
+| HTTP/REST | `HttpRequestUtils`, `HttpUtilsNeo`, `RestUtils` (interface), `rest/RestUtilsImpl`, `QueryManagerUtils` |
+| JSON/model export | `JsonJacksonUtils`, `ModelExporterUtils` |
+| Dialogs/UI | `DialogValidationUtils`, `LightBoxUtils`, `PropertiesUtils`, `PathComparatorUtils` |
+| Misc | `ImageUtils`, `TagsUtils`, `UrlUtils`, `UserUtils`, `pagination/PaginationServiceImpl` (OSGi `@Component`) |
+
+14 files from the original collection were excluded entirely (not partially stripped) because they
+were too tightly coupled to proprietary business logic/content models with no generic value left
+once the client-specific parts were removed — e.g. `PathUtils`, `LanguageUtils`, `PageUtils`,
+`AssetUtils`, `ReferenceComponentUtils`, the `page/service/PageService(Impl)` pair, and `RamoUtils`
+(a pure insurance-line-of-business enum).
 
 ### Content Package Structure
 

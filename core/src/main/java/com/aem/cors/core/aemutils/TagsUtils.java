@@ -17,12 +17,18 @@ import java.util.Locale;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+/** Util class for AEM Tagging (com.day.cq.tagging) */
 public class TagsUtils {
 
     private TagsUtils() {
         throw new UnsupportedOperationException("Do not instantiate Util class");
     }
 
+    /** Resolve the input tag IDs to their localized titles
+     *
+     * @param resource the Resource used to adapt to a TagManager
+     * @param tags the tag IDs to resolve
+     * @return a List with the resolved tag titles, or an empty List if tags is null/empty or no TagManager is available */
     public static List<String> getTagsValue(@NotNull Resource resource, @Nullable String[] tags) {
         if (null == tags || ArrayUtils.isEmpty(tags)) {
             return Collections.emptyList();
@@ -35,6 +41,11 @@ public class TagsUtils {
         return Collections.emptyList();
     }
 
+    /** Resolve the input tag ID to its short name
+     *
+     * @param resource the Resource used to adapt to a TagManager
+     * @param tagString the tag ID to resolve
+     * @return the tag's name, or an empty String if tagString is blank, no TagManager is available, or the tag cannot be resolved */
     public static String getTagName(@NotNull Resource resource, @Nullable String tagString) {
         if (StringUtils.isEmpty(tagString)) {
             return StringUtils.EMPTY;
@@ -50,6 +61,11 @@ public class TagsUtils {
         return tag.getName();
     }
 
+    /** Resolve the input tag ID to its localized title
+     *
+     * @param resource the Resource used to adapt to a TagManager
+     * @param tagString the tag ID to resolve
+     * @return the tag's title, or an empty String if tagString is blank, no TagManager is available, or the tag cannot be resolved */
     public static String getTagTitle(@NotNull Resource resource, @Nullable String tagString) {
         if (StringUtils.isEmpty(tagString)) {
             return StringUtils.EMPTY;
@@ -65,6 +81,12 @@ public class TagsUtils {
         return tag.getTitle();
     }
 
+    /** Given a tag namespace, resolve the IDs of its direct children whose title matches one of the input titles
+     *
+     * @param tagManager the TagManager
+     * @param titles the tag titles to match against the namespace's children
+     * @param namespace the root tag ID to search under, e.g.: "my-namespace:my-category"
+     * @return a List of matching tag IDs, or an empty List if the namespace cannot be resolved */
     public static List<String> getTagIdsFromTitles(TagManager tagManager, List<String> titles, String namespace) {
         List<String> tagIds = new ArrayList<>();
         // e.g.: "my-namespace:my-category"

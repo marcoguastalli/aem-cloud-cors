@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.Map;
 import java.util.Objects;
 
+/** REST response representation wrapping a Map of String key/value pairs */
 public class MapRestResponse implements Serializable {
 
     private static final long serialVersionUID = -5006759129080416558L;
