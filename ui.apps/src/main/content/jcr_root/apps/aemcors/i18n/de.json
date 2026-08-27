@@ -8,5 +8,6 @@
   "aemcors.components.link.field.linkTarget.label" : "In neuem Tab öffnen",
   "aemcors.components.link.field.linkTarget.description" : "Öffnet den Link in einem neuen Browser-Tab anstatt im aktuellen.",
   "aemcors.components.htmlcomponent.title" : "HTML-Komponente",
-  "aemcors.components.htmlcomponent.tab.general.field.htmlcode" : "HTML-Code"
+  "aemcors.components.htmlcomponent.tab.general.field.htmlcode" : "HTML-Code",
+  "Welcome to Planet Earth" : "Willkommen auf dem Planeten Erde"
 }
