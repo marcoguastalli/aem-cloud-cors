@@ -6,4 +6,14 @@
     jcr:primaryType="sling:OrderedFolder"
     jcr:title="AEM CORS Fragments"
     sling:configRef="/conf/aemcors">
+    <language-masters/>
+    <us/>
+    <de/>
+    <es/>
+    <fr/>
+    <it/>
+    <pt/>
+    <pl/>
+    <gb/>
+    <nl/>
 </jcr:root>
