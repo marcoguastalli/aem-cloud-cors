@@ -2,13 +2,12 @@
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:redirectTarget="/content/aemcors/us/en"
+        cq:redirectTarget="/content/aemcors/it/it"
         cq:template="/conf/aemcors/settings/wcm/templates/page-content"
         jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
         jcr:primaryType="cq:PageContent"
-        jcr:title="us"
-        jcr:uuid="8dde5096-a985-484d-9ff2-1b33ef02d516"
+        jcr:title="it"
+        jcr:uuid="e9ae8f3a-bb14-4fce-8a13-0ee537543fcd"
         sling:resourceType="aemcors/components/page"/>
-    <en/>
-    <es/>
+    <it/>
 </jcr:root>
