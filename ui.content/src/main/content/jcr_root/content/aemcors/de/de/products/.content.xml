@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" 
-    xmlns:cq="http://www.day.com/jcr/cq/1.0" 
-    xmlns:jcr="http://www.jcp.org/jcr/1.0" 
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
-    <jcr:content cq:template="/conf/aemcors/settings/wcm/templates/catalog-page"
+    <jcr:content
+        cq:template="/conf/aemcors/settings/wcm/templates/catalog-page"
+        jcr:mixinTypes="[cq:LiveRelationship,cq:ReplicationStatus2,mix:versionable]"
         jcr:primaryType="cq:PageContent"
-        jcr:mixinTypes="[cq:LiveRelationship]"
-        jcr:title="Catalog Page" 
+        jcr:title="Catalog Page"
+        jcr:uuid="8df83e99-4aba-48a2-be42-fbc9af20b6a1"
         sling:resourceType="aemcors/components/commerce/catalogpage"
-        showMainCategories="{Boolean}true">
-    </jcr:content>
-    <category-page />
-    <product-page />
+        showMainCategories="{Boolean}true"/>
+    <category-page/>
+    <product-page/>
 </jcr:root>

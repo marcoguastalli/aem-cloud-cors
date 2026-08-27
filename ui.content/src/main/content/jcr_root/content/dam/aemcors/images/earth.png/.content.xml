@@ -5,8 +5,6 @@
     jcr:uuid="332893fb-7da3-4c42-a5c0-02d52a889184">
     <jcr:content
         dam:assetState="processed"
-        jcr:lastModified="{Date}2026-08-25T22:11:57.172+02:00"
-        jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
             dam:Bitsperpixel="{Long}24"

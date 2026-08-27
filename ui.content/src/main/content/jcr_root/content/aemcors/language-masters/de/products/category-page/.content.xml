@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" 
-    xmlns:cq="http://www.day.com/jcr/cq/1.0" 
-    xmlns:jcr="http://www.jcp.org/jcr/1.0" 
-    xmlns:nt="http://www.jcp.org/jcr/nt/1.0" 
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:template="/conf/aemcors/settings/wcm/templates/category-page"
-        jcr:primaryType="cq:PageContent" 
+        jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+        jcr:primaryType="cq:PageContent"
         jcr:title="Category page"
+        jcr:uuid="86abf213-438f-4ff6-82ad-c37d4e811ce5"
         sling:resourceType="aemcors/components/page">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="aemcors/components/container"
             layout="responsiveGrid">
-            <container jcr:primaryType="nt:unstructured"
+            <container
+                jcr:primaryType="nt:unstructured"
                 sling:resourceType="aemcors/components/container">
-                <container jcr:primaryType="nt:unstructured"
+                <container
+                    jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemcors/components/container"
                     layout="responsiveGrid">
-                    <productlist cq:styleIds="[1570700958199]" 
+                    <productlist
+                        cq:styleIds="[1570700958199]"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="aemcors/components/commerce/productlist" />
+                        sling:resourceType="aemcors/components/commerce/productlist"/>
                 </container>
             </container>
         </root>

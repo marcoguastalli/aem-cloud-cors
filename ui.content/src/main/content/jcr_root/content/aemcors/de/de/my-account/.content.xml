@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:template="/conf/aemcors/settings/wcm/templates/page-content"
-        jcr:mixinTypes="[cq:LiveRelationship]"
+        jcr:mixinTypes="[cq:LiveRelationship,cq:ReplicationStatus2,mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="My Account"
+        jcr:uuid="db82cd3e-eae6-43d9-b60e-8844f22353f9"
         sling:resourceType="aemcors/components/page"
         hideInNav="true"
         pageTitle="My Account">

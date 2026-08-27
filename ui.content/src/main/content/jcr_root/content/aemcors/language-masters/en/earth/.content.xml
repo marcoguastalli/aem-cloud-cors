@@ -45,7 +45,7 @@
                         alt="Planet Earth"
                         altValueFromDAM="false"
                         displayPopupTitle="true"
-                        fileReference="/content/dam/aemcors/images/earth/earth.png"
+                        fileReference="/content/dam/aemcors/images/earth.png"
                         imageFromPageImage="false"
                         isDecorative="false"
                         linkTarget="_self"

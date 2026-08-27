@@ -1,28 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" 
-    xmlns:cq="http://www.day.com/jcr/cq/1.0" 
-    xmlns:jcr="http://www.jcp.org/jcr/1.0" 
-    xmlns:nt="http://www.jcp.org/jcr/nt/1.0" 
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
-    <jcr:content cq:template="/conf/aemcors/settings/wcm/templates/product-page"
-        jcr:mixinTypes="[cq:LiveRelationship]"
-        jcr:primaryType="cq:PageContent" 
+    <jcr:content
+        cq:template="/conf/aemcors/settings/wcm/templates/product-page"
+        jcr:mixinTypes="[cq:LiveRelationship,cq:ReplicationStatus2,mix:versionable]"
+        jcr:primaryType="cq:PageContent"
         jcr:title="Product page"
+        jcr:uuid="54e261fe-dc5b-4b18-bd96-910fd0c3c9a9"
         sling:resourceType="aemcors/components/page">
-        <root jcr:primaryType="nt:unstructured"
+        <root
             jcr:mixinTypes="[cq:LiveRelationship]"
+            jcr:primaryType="nt:unstructured"
             sling:resourceType="aemcors/components/container"
             layout="responsiveGrid">
-            <container jcr:primaryType="nt:unstructured"
+            <container
                 jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
                 sling:resourceType="aemcors/components/container">
-                <container jcr:primaryType="nt:unstructured"
+                <container
                     jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemcors/components/container"
                     layout="responsiveGrid">
-                    <product jcr:primaryType="nt:unstructured"
+                    <product
                         jcr:mixinTypes="[cq:LiveRelationship]"
-                        sling:resourceType="aemcors/components/commerce/product" />
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemcors/components/commerce/product"/>
                 </container>
             </container>
         </root>

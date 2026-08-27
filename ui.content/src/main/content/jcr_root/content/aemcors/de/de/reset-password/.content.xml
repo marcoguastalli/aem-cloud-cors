@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:template="/conf/aemcors/settings/wcm/templates/page-content"
-        jcr:mixinTypes="[cq:LiveRelationship]"
+        jcr:mixinTypes="[cq:LiveRelationship,cq:ReplicationStatus2,mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Reset Password"
+        jcr:uuid="89d0be79-1749-410f-99a7-423ebd7854b8"
         sling:resourceType="aemcors/components/page"
-        pageTitle="Reset Password"
-        hideInNav="{Boolean}true">
+        hideInNav="{Boolean}true"
+        pageTitle="Reset Password">
         <root
-        jcr:mixinTypes="[cq:LiveRelationship]"
+            jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="aemcors/components/container">
             <container

@@ -10,4 +10,6 @@
         jcr:uuid="8618f8a9-2839-454a-82c9-c21de6121a99"
         sling:resourceType="aemcors/components/page"
         hideInNav="{Boolean}true"/>
+    <de/>
+    <en/>
 </jcr:root>

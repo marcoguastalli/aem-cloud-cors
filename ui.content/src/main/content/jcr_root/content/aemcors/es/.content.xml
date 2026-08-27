@@ -9,4 +9,5 @@
         jcr:title="es"
         jcr:uuid="096b1788-9de1-4c2d-b516-c3b53adfa095"
         sling:resourceType="aemcors/components/page"/>
+    <es/>
 </jcr:root>

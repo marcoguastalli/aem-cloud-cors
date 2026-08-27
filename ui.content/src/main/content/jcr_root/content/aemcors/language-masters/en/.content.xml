@@ -100,4 +100,6 @@
             </container>
         </root>
     </jcr:content>
+    <simple-content-page/>
+    <earth/>
 </jcr:root>
